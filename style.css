@@ -1,0 +1,79 @@
+
+    /* Add some basic styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: beige;
+    }
+
+    header {
+        background-color: #d2b48c;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    nav {
+        background-color: #d2b48c;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .tab {
+        display: none;
+        background-color: beige;
+        padding: 20px;
+        margin-top: 10px;
+        color: #333;
+    }
+
+    .active {
+        display: block;
+    }
+
+    /* Color the links on hover */
+    a:hover {
+        color: #f5f5dc;
+    }
+
+    /* Style the main content */
+    #main {
+        color: #333;
+    }
+
+    /* Style the projects */
+    #project {
+        color: #333;
+    }
+
+    /* Style the about me section */
+    #about {
+        color: #333;
+    }
+
+    /* Style the contacts section */
+    #contacts {
+        color: #333;
+    }

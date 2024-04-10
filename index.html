@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Website</title>
+    <style>
+        /* Add some basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2e8df; /* Light beige background color */
+            color: #6e534d; /* Brown text color */
+        }
+        
+        /* Style for the tabs */
+        .tab {
+            display: none;
+            background-color: #ede5db; /* Beige tab background color */
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        /* Style for the active tab */
+        .active {
+            display: block;
+        }
+        
+        /* Style for the header */
+        header {
+            background-color: #6e534d; /* Brown header background color */
+            padding: 20px;
+            color: #fff; /* White header text color */
+        }
+        
+        /* Style for the navigation */
+        nav {
+            background-color: #f2e8df; /* Light beige navigation background color */
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        nav ul li a {
+            color: #6e534d; /* Brown navigation link color */
+            text-decoration: none;
+            padding: 5px;
+        }
+        
+        nav ul li a:hover {
+            background-color: #6e534d; /* Brown navigation link background color on hover */
+            color: #fff; /* White navigation link text color on hover */
+        }
+        
+        /* Style for the h2 headings */
+        h2 {
+            color: #6e534d; /* Brown heading text color */
+        }
+        
+        /* Style for the paragraph text */
+        p {
+            margin-bottom: 15px;
+        }
+        
+        /* Style for the buttons */
+        .btn {
+            display: inline-block;
+            background-color: #6e534d; /* Brown button background color */
+            color: #fff; /* White button text color */
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #8e6e68; /* Darker brown button background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><button class="btn" onclick="openTab('main')">Main</button></li>
+            <li><button class="btn" onclick="openTab('project')">Projects</button></li>
+            <li><button class="btn" onclick="openTab('about')">About Me</button></li>
+            <li><button class="btn" onclick="openTab('contacts')">Contacts</button></li>
+        </ul>
+    </nav>
+    
+    <div class="tab" id="main">
+        <h2>Welcome to my portfolio!</h2>
+        <p>
+            Welcome to my portfolio website. My name is Akezhan Shakhabdin, and I'm a passionate developer with expertise in web development and programming. This website showcases my work, projects, and provides information about me.
+        </p>
+        <h3>Education</h3>
+        <p>
+            I have a Bachelor's degree in Physics&Math from HKUST. During my studies, I gained a solid foundation in programming, algorithms, and software development methodologies. I also had the opportunity to work on various projects that helped me enhance my practical skills.
+        </p>
+        <h3>What you'll find on this website</h3>
+        <p>
+            On this website, you'll find examples of my projects, demonstrating my skills and capabilities as a developer. I have experience working with HTML, CSS, JavaScript, PHP, Python, and various web frameworks. Each project showcases different aspects of my expertise.
+        </p>
+        <p>
+            You can navigate through the tabs above to explore the different sections of this portfolio. The "Projects" tab highlights some of the notable projects I've worked on, providing details about their objectives and technologies used. The "About Me" tab offers insights into my background, skills, experiences, and work history. Lastly, the "Contacts" tab provides ways to get in touch with me.
+           </div>
+    
+    <div class="tab" id="project">
+        <h2>My Projects</h2>
+        <p>
+            Here are some of the projects I've worked on:
+        </p>
+        <!-- Add your project details here -->
+    </div>
+    
+    <div class="tab" id="about">
+        <h2>About Me</h2>
+        <h3>Work Experience</h3>
+        <p>
+            I have gained valuable work experience in the field of web development. Here are some of my notable positions:
+        </p>
+        <h4>Web Developer at XYZ Company</h4>
+        <p>
+            - Developed and maintained company websites using HTML, CSS, and JavaScript.
+        </p>
+        <p>
+            - Collaborated with cross-functional teams to implement new features and improve website performance.
+        </p>
+        
+        <h4>Freelance Web Developer</h4>
+        <p>
+            - Worked on various freelance projects, creating responsive and user-friendly websites for clients.
+        </p>
+        <p>
+            - Implemented custom designs and integrated content management systems for easy website management.
+        </p>
+        
+        <h4>Intern at ABC Agency</h4>
+        <p>
+            - Assisted with website development tasks and gained hands-on experience with different web technologies.
+        </p>
+        <p>
+            - Participated in team projects and learned about agile development methodologies.
+        </p>
+    </div>
+    
+    <div class="tab" id="contacts">
+        <h2>Contact Me</h2>
+        <p>
+            If you'd like to get in touch with me, feel free to reach out through one of the following channels:
+        </p>
+        <ul>
+            <li>Email: [akezhan_sh_05@mail.ru]</li>
+            <li>Phone: [Your Phone Number]</li>
+            <li>LinkedIn: [Your LinkedIn Profile]</li>
+        </ul>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            // Get all tab elements
+            var tabs = document.getElementsByClassName("tab");
+            
+            // Hide all tabs
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+            
+            // Show the selected tab
+            document.getElementById(tabName).style.display = "block";
+        }
+        
+        // Set the 'Main' tab as active by default
+        openTab('main');
+    </script>
+</body>
+</html>
